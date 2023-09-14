@@ -1,19 +1,9 @@
 import os
 
-# get path
+program = "python"
+arguments = ["hello.py"]
 
-pwd = os.getcwd()
-print(pwd)
+args_list = list(arguments)
 
-
-# cambiar directorio
-
-def current_path():
-    print("Current working directory before")
-    print(os.getcwd())
-    print()
-
-
-current_path()
-os.chdir('../')
-current_path()
+run = str(program) + str(args_list)
+print(os.execvp(run))
