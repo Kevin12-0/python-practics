@@ -7,7 +7,7 @@
 <p>Contiene objetos basicos colo los arreglos o vectores</p>
 
 <h1>Seleccionar por id</h1>
-````python
+```python
 import pandas as pd
 
 # Crear un DataFrame de ejemplo
@@ -39,9 +39,21 @@ df = df.fillna(0)
 
 ## leer archivo de excel
 
-```python
+```
+python
 import pandas as pd
 
 df = pd.read_excel('tu_archivo.xlsx')
 
 print(df)```
+
+# crear un df con dimenciones de 10x10
+```
+import pandas as pd
+import numpy as np
+
+data = np.random.randint(0, 101, size=(10, 10))
+df = pd.DataFrame(data)
+
+print(df)```
+
