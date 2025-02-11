@@ -24,3 +24,14 @@ fila_4_por_posicion = df.iloc[3]  # La posición 3 corresponde a la cuarta fila
 print(fila_4_por_etiqueta)
 print(fila_4_por_condicion)
 print(fila_4_por_posicion)```
+
+
+import pandas as pd
+
+# Crear un DataFrame de ejemplo con valores nulos
+data = {'columna1': [1, 2, None, 4],
+        'columna2': [5, None, 7, 8]}
+df = pd.DataFrame(data)
+
+# Remplazar los valores nulos por 0 en todo el DataFrame
+df = df.fillna(0)
