@@ -10,31 +10,27 @@
 ```python
 import pandas as pd
 
-# Crear un DataFrame de ejemplo
 data = {'id': [1, 2, 3, 4, 5],
         'columna1': [10, 20, 30, 40, 50],
         'columna2': ['A', 'B', 'C', 'D', 'E']}
 df = pd.DataFrame(data)
 
-# Seleccionar la fila con el ID 4 utilizando diferentes métodos
 fila_4_por_etiqueta = df.loc[4]
 fila_4_por_condicion = df[df['id'] == 4]
-fila_4_por_posicion = df.iloc[3]  # La posición 3 corresponde a la cuarta fila
+fila_4_por_posicion = df.iloc[3]
 
 print(fila_4_por_etiqueta)
 print(fila_4_por_condicion)
 print(fila_4_por_posicion)```
 
 
-import pandas as pd
+```import pandas as pd
 
-# Crear un DataFrame de ejemplo con valores nulos
 data = {'columna1': [1, 2, None, 4],
         'columna2': [5, None, 7, 8]}
 df = pd.DataFrame(data)
 
-# Remplazar los valores nulos por 0 en todo el DataFrame
-df = df.fillna(0)
+df = df.fillna(0)````
 
 
 ## leer archivo de excel
