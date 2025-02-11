@@ -35,3 +35,13 @@ df = pd.DataFrame(data)
 
 # Remplazar los valores nulos por 0 en todo el DataFrame
 df = df.fillna(0)
+
+
+## leer archivo de excel
+
+```python
+import pandas as pd
+
+df = pd.read_excel('tu_archivo.xlsx')
+
+print(df)```
